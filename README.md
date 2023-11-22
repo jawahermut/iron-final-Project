@@ -1,8 +1,10 @@
 # Employee Management
 <!-- ABOUT THE PROJECT -->
 ## Description of the project
-This is about a java application for midterm project it is about an employees have some tasks to complete, the project iclude 3 models 
-two is the entity classes Employee and Task and the Address class which embeddable from the Employee entity the relation between the entity is that one employee can have many tasks and one task takes by one employee and it should be display in the database,the code handle exception gracefully and store all data in a normalized sql data base,all tested has been created for methods 
+
+this is about a frontend website for final project it is about an employee have some tasks and the user can display a list of employee that can be modified or deleted also 
+you can click on the details button to show more details about the employee 
+the new employee page it is allow the user to create a new employee on the list and database , the last page it is list of task assigned to employee from the database 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -12,10 +14,11 @@ In the diagram, the Employees class has a one-to-many relationship with the Task
 
 ## SetUp
 The setUp for the project is need to follow the following steps:
-* Open Spring initilizer
-* Add dependencies such, Spring web,Spring Data JPA, MySQL Driver
-* Other dependencies add later : Spring validation, lombok
 * install Angular
+* Create component
+* set the router
+* set service
+* create logic for retrieving, deleting, modifying
 
 ## Technologies Used
 * [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html): The programming language used for the backend development.
@@ -24,6 +27,7 @@ The setUp for the project is need to follow the following steps:
 * Postman: A tool for testing and documenting APIs, used for testing the API endpoints during development.
 * Maven: A build automation tool used for managing dependencies and building the project.
 * [Visual studio code](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git):a popular source code editor developed by Microsoft. It is available for Windows, macOS, and Linux and provides a lightweight yet powerful environment for writing, editing, and debugging code across various programming languages.
+* [Angular](https://angular.io/): is an open-source, JavaScript framework written in TypeScript. Google maintains it, and its primary purpose is to develop single-page applications.
 
  ## Controllers and Routes structure
 ## Employee Controller
@@ -59,8 +63,8 @@ class that handles various routes related to tasks in an API. Here's an explanat
 - Functionality: Returns a list of all tasks available in the system.
 - Example: Sending a GET request to /api/employee/task will retrieve all tasks.
 
-## Back-end
-[Backend](https://github.com/jawahermut/midProject.git)
+## Back-end Project
+[Backend-Project](https://github.com/jawahermut/midProject.git)
 ## Presentation
 [Presentation](https://www.canva.com/design/DAFytBRB1bc/_LAwK2pa1YH4HjFw6TTQbg/view?utm_content=DAFytBRB1bc&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
