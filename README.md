@@ -8,9 +8,6 @@ The website also includes a page where users can create new employees. This func
 Furthermore, there is a page that displays a list of tasks assigned to each employee, sourced from the database.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Class Diagram
-In the diagram, the Employees class has a one-to-many relationship with the Task class through the tasks attribute. This means that an employee can be associated with multiple tasks, and a task can be assigned to one employee
-![Model](/Users/jawahermut/Documents/classDia.png)
 
 ## SetUp
 The setUp for the project is need to follow the following steps:
