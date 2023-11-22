@@ -1,13 +1,39 @@
+<h2>More Details</h2>
+<table class="table-stripad">
+<thead>
+  <tr>
+    <th>
+      Name:
+    </th>
+    <th>
+      Phone Number:
+    </th>
+    <th>
+      Street:
+    </th>
+    <th>
+      City:
+    </th>
+    <th>
+      State:
+    </th>
+    <th>
+      PostalCode:
+    </th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
 
 
-<div class="">
+<td *ngIf="employee?.employeeName">{{employee?.employeeName}}</td>
+<td *ngIf="employee?.employeeNumber">{{employee?.employeeNumber}}</td>
+<td *ngIf="employee?.address.street">  {{employee.address?.street}}</td>
 
-  <h1 *ngIf="employee?.employeeName">Name: {{employee?.employeeName}}</h1>
-  <p *ngIf="employee?.employeeNumber"> Phone Number: {{employee?.employeeNumber}}</p>
-<p *ngIf="employee?.street"> Street: {{employee.address?.street}}</p>
-<p *ngIf="employee?.city"> city: {{employee.address?.city}}</p>
-<p *ngIf="employee?.state">State: {{employee.address?.state}}</p>
-<p *ngIf="employee?.postalCode">PostalCode: {{employee.address?.postalCode}}</p>
+<td *ngIf="employee?.address.city">{{employee.address?.city}}</td>
+<td *ngIf="employee?.address.state"> {{employee.address?.state}}</td>
+<td *ngIf="employee?.address.postalCode">{{employee.address?.postalCode}}</td>
+  </tr>
+</tbody>
 
-
-</div>
+</table>

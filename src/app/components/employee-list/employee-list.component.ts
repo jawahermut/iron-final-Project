@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { employee } from 'src/app/model/employee.model';
 import { EmployeeService } from 'src/app/services/employee.service';
 
@@ -26,7 +27,8 @@ export class EmployeeListComponent implements OnInit{
  
  
   constructor(private employeeService:EmployeeService,
-    private http:HttpClient){}
+    private http:HttpClient,
+    private route: Router){}
 
 
   ngOnInit(): void {
@@ -66,4 +68,8 @@ export class EmployeeListComponent implements OnInit{
       });
     }
   }
+  updateEmployee(employeeId:number|null){
+    this.route.navigate(['update-employees',employeeId]);
+  }
+
 }

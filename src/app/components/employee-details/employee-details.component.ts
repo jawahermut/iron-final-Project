@@ -29,7 +29,7 @@ employeeId:any='';
 
 
 ngOnInit(): void {
-  this.employeeId=this.route.snapshot.paramMap.get('employeeId');
+  this.employeeId=this.route.snapshot.paramMap.get('id');
 
   console.log("EmployeeId = ",this.employeeId)
   this.getEmployeeDetails();
@@ -40,6 +40,7 @@ getEmployeeDetails():void{
   this.employeeService.getEmployeeDetails(this.employeeId).subscribe({
     next:(data)=>{
       this.employee=data;
+      console.log(this.employee);
       console.log("Employee= ",this.employeeId);
     }
   });

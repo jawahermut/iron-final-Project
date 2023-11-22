@@ -32,6 +32,11 @@ deleteEmployee(employeeId:number | null): Observable<void> {
   const url = `${this.API_URL}/employees/${employeeId}`;
   return this.http.delete<void>(url);}
 
+  //emp update
+  updateEmployee(employeeId:number,employee:any):Observable<any>{
+    return this.http.put(`${this.API_URL}/employees/${employeeId}`, employee);
+  }
+
 // all Tasks (this.API_URL/task );
 getAllTasks():Observable<any> {
   return this.http.get(this.API_URL+"/task" );

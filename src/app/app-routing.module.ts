@@ -37,7 +37,7 @@ component:HomeComponent
 
 {
 
-  path:'employees/:id/update',
+  path:'update-employees/:id',
   component:UpdateEmployeeComponent
 
 },
