@@ -1,0 +1,25 @@
+<p>task-list works!</p>
+<!--
+-->
+
+
+<h2>Emloyee List</h2>
+<table class="table-stripad">
+  <thead>
+    <tr>
+      <th>Taks Name</th>
+      <th> Employee name</th>
+
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let task of tasks">
+      <td>{{task?.name}}</td>
+      <td>{{task.employees?.employeeName}}</td>
+
+
+    
+    </tr>
+  </tbody>
+</table>

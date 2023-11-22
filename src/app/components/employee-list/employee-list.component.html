@@ -1,0 +1,37 @@
+<!--
+-->
+
+
+<h2>Emloyee List</h2>
+<table class="table-stripad">
+  <thead>
+    <tr>
+      <th>Employee Name</th>
+      <th>Phone Number</th>
+      <th>Street</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Postal Code</th>
+      <th>View</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td>{{employee.employeeName}}</td>
+      <td>{{employee?.employeeNumber}}</td>
+      <td>{{employee.address?.city}}</td>
+      <td>{{employee.address?.street}}</td>
+      <td>{{employee.address?.state}}</td>
+      <td>{{employee.address?.postalCode}}</td>
+      <td>
+        <a [routerLink]="['/employees',employee.employeeId]">
+          <button (click)="(employee.employeeId)" class="btn">Detalis</button></a>
+      </td>
+      <td>
+        <button *ngIf="employee.employeeId !== null" (click)="deleteEmployee(employee.employeeId!)"
+          class="btn">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
