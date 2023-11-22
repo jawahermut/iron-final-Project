@@ -1,11 +1,11 @@
 # Employee Management
 <!-- ABOUT THE PROJECT -->
 ## Description of the project
+This is a frontend website for my final project. It focuses on managing employee tasks. Users can view a list of employees, modify their details, or delete them. Additionally, by clicking on the details button, users can access more information about each employee.
 
-this is about a frontend website for final project it is about an employee have some tasks and the user can display a list of employee that can be modified or deleted also 
-you can click on the details button to show more details about the employee 
-the new employee page it is allow the user to create a new employee on the list and database , the last page it is list of task assigned to employee from the database 
+The website also includes a page where users can create new employees. This functionality allows users to add new employees to both the list and the database.
 
+Furthermore, there is a page that displays a list of tasks assigned to each employee, sourced from the database.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Class Diagram
