@@ -63,7 +63,7 @@ class that handles various routes related to tasks in an API. Here's an explanat
 ## Back-end Project
 [Backend-Project](https://github.com/jawahermut/midProject.git)
 ## Presentation
-[Presentation](https://www.canva.com/design/DAFytBRB1bc/_LAwK2pa1YH4HjFw6TTQbg/view?utm_content=DAFytBRB1bc&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+[Presentation](https://www.canva.com/design/DAFytBRB1bc/AzkJSPJA-qbXEBS0TMA5eg/edit?utm_content=DAFytBRB1bc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Future Work
 Authentication and Authorization: Implement a secure authentication mechanism, such as JWT (JSON Web Tokens), to protect the API endpoints and restrict access to authorized users only. This can involve user registration, login/logout functionality, and role-based access control
